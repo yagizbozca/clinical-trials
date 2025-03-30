@@ -1,1 +1,7 @@
-<p>favorites works!</p>
+<div class="container">
+  <div class="list-header">
+    <button mat-stroked-button class="warning" (click)="removeFavorite()">Remove favorites</button>
+  </div>
+
+  <app-list [listData]="favoriteService.favoriteList()" (checkedChange)="updateSelectedItems($event)"></app-list>
+</div>

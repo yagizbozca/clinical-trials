@@ -2,7 +2,7 @@
   @for (element of listData; track element.id) {
     <section class="card">
       <h4>{{ element.title }}</h4>
-      <mat-checkbox></mat-checkbox>
+      <mat-checkbox (change)="onCheckboxChange(element)"></mat-checkbox>
     </section>
   }
 </div>
